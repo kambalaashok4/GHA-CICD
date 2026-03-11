@@ -5,7 +5,7 @@ A Django application deployed to **AWS ECS (Fargate)** via **GitHub Actions** CI
 ## Architecture
 
 ```
-GitHub Push → GitHub Actions → Build & Test → Push image to ECR → Terraform Apply → ECS Fargate
+GitHub Push → GitHub Actions → Build & Test → Scan-Sonar-scaner → Push image to ECR → Terraform Apply → ECS Fargate
 ```
 
 **AWS Resources provisioned by Terraform:**
