@@ -1,3 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+*.sqlite3
+
+# Django
+staticfiles/
+media/
+
 # Local .terraform directories
 .terraform/
 
