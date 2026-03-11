@@ -83,7 +83,7 @@ resource "aws_security_group" "alb" {
 
 resource "aws_security_group" "ecs_tasks" {
   name        = "${var.app_name}-${var.environment}-ecs-tasks-sg"
-  description = "Security group for ECS tasks — only accepts traffic from the ALB"
+  description = "SecurityGroupForECSTasksOonlyAcceptsTrafficFromALB"
   vpc_id      = aws_vpc.main.id
 
   ingress {

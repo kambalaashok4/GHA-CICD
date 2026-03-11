@@ -50,4 +50,5 @@ variable "django_secret_key" {
   description = "Django SECRET_KEY value"
   type        = string
   sensitive   = true
+  default = "admin123"
 }

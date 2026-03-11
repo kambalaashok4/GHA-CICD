@@ -9,16 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    # All backend configuration is supplied at runtime via -backend-config flags.
-    # See the README and the GitHub Actions workflow for details.
-    # Example:
-    #   terraform init \
-    #     -backend-config="bucket=<your-tf-state-bucket>" \
-    #     -backend-config="key=django-ecs/terraform.tfstate" \
-    #     -backend-config="region=us-east-1"
+    bucket = "amz-terr-state"
+    key    = "django-ecs/terraform.tfstate"
+    region = "us-east-1"
   }
 }
-
 provider "aws" {
   region = var.aws_region
 }
