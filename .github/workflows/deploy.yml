@@ -25,6 +25,7 @@ jobs:
   test:
     name: Test Django App
     #runs-on: ubuntu-latest
+    # runs on  ec2-runner
     runs-on: self-hosted
     permissions:
       contents: read
@@ -57,6 +58,7 @@ jobs:
   # ─────────────────────────────────────────────
   build-and-push:
     name: Build and Push Docker Image
+    # runs on  ec2-runner
     runs-on:  self-hosted
     needs: test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
