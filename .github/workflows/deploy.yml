@@ -24,7 +24,8 @@ jobs:
   # ─────────────────────────────────────────────
   test:
     name: Test Django App
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: read
 
