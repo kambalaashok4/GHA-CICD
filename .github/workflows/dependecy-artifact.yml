@@ -27,7 +27,7 @@ jobs:
   
   download-job: 
     runs-on: ubuntu-latest
-    needs: write-job
+    #needs: write-job
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v5
